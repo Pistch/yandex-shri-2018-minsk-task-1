@@ -7,50 +7,127 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<div class="slide-show">
-    <input type="radio" value="pic1" name="gallery-slide" id="g1_1" checked="checked">
-    <input type="radio" value="pic2" name="gallery-slide"  id="g1_2">
-    <input type="radio" value="pic3" name="gallery-slide"  id="g1_3">
-    <input type="radio" value="pic4" name="gallery-slide"  id="g1_4">
-    <div class="slide-show__gallery">
-        <img src="img/seatown1.png" />
-        <img src="img/seatown2.png" />
-        <img src="img/seatown3.png" />
-        <img src="img/seatown4.png" />
-        <div class="float-clear"></div>
-    </div>
-    <label for="g1_1" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic1">
-        <img src="img/arrow.svg" alt="Предыдущий"/>
-    </label>
-    <label for="g1_2" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic2">
-        <img src="img/arrow.svg" alt="Предыдущий"/>
-    </label>
-    <label for="g1_3" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic3">
-        <img src="img/arrow.svg" alt="Предыдущий"/>
-    </label>
-    <label for="g1_4" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic4">
-        <img src="img/arrow.svg" alt="Предыдущий"/>
-    </label>
-    <label for="g1_1" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic1">
-        <img src="img/arrow.svg" alt="Следующий"/>
-    </label>
-    <label for="g1_2" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic2">
-        <img src="img/arrow.svg" alt="Следующий"/>
-    </label>
-    <label for="g1_3" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic3">
-        <img src="img/arrow.svg" alt="Следующий"/>
-    </label>
-    <label for="g1_4" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic4">
-        <img src="img/arrow.svg" alt="Следующий"/>
-    </label>
-    <div class="slide-show__controls">
-        <label for="g1_1"></label>
-        <label for="g1_2"></label>
-        <label for="g1_3"></label>
-        <label for="g1_4"></label>
+<div class="about">
+    <h2>Веб-энтузиаст</h2>
+    <h1>Александр Глущенко</h1>
+    <div class="about__picture"></div>
+    <p>
+        Сисадмин по профессии, программист-самоучка. Пишу в свободное от других вещей игру на React Native, изучаю возможности SVG и варианты анимации в веб,
+        делал многопользовательское веб-приложение для создания и запуска собственного интернет-радио, пишу маленькие инструменты для работы (утилитку мониторинга состояния серверов, агрегатор интерфейсов
+        используемых веб-приложений, фишинговую программу для тренировки реакции подшефных пользователей на письма с вредоносным содержимым и т. п.)
+    </p>
+</div>
+<h1>Ожидания от ШРИ</h1>
+<div class="expectations"></div>
+<h1>Мои работы</h1>
+<div class="portfolio-item">
+    <h2>Сайт моего работодателя</h2>
+    <a class="portfolio-item__link" href="http://seatown.ru" target="_blank">seatown.ru</a>
+    <p class="portfolio-item__description">
+        Можно сказать, пробы пера. Делался в то время, когда изучал PHP, а Javascript был чем-то из разряда особой магии для избранных. Сейчас заканчиваю переписывать сайт с нуля, потому что в код текущего варианта смотреть страшно.
+        Новый вариант использует самописную CMS на PHP (таково уж требование IT-менеджера), переработанный роутинг с Человеко-Понятными Урлами и множество других полезностей по части фронтенда.
+    </p>
+    <div class="slide-show">
+        <input type="radio" value="pic1" name="gallery-1-slide" id="g1_1" checked="checked">
+        <input type="radio" value="pic2" name="gallery-1-slide"  id="g1_2">
+        <input type="radio" value="pic3" name="gallery-1-slide"  id="g1_3">
+        <input type="radio" value="pic4" name="gallery-1-slide"  id="g1_4">
+        <div class="slide-show__slide-shadow">
+            <div class="slide-show__gallery">
+                <img src="img/seatown1.png" />
+                <img src="img/seatown2.png" />
+                <img src="img/seatown3.png" />
+                <img src="img/seatown4.png" />
+                <div class="float-clear"></div>
+            </div>
+        </div>
+        <label for="g1_1" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic1">
+            <img src="img/arrow.svg" alt="Предыдущий"/>
+        </label>
+        <label for="g1_2" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic2">
+            <img src="img/arrow.svg" alt="Предыдущий"/>
+        </label>
+        <label for="g1_3" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic3">
+            <img src="img/arrow.svg" alt="Предыдущий"/>
+        </label>
+        <label for="g1_4" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic4">
+            <img src="img/arrow.svg" alt="Предыдущий"/>
+        </label>
+        <label for="g1_1" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic1">
+            <img src="img/arrow.svg" alt="Следующий"/>
+        </label>
+        <label for="g1_2" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic2">
+            <img src="img/arrow.svg" alt="Следующий"/>
+        </label>
+        <label for="g1_3" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic3">
+            <img src="img/arrow.svg" alt="Следующий"/>
+        </label>
+        <label for="g1_4" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic4">
+            <img src="img/arrow.svg" alt="Следующий"/>
+        </label>
+        <div class="slide-show__controls">
+            <label for="g1_1"></label>
+            <label for="g1_2"></label>
+            <label for="g1_3"></label>
+            <label for="g1_4"></label>
+        </div>
     </div>
 </div>
 
+<div class="portfolio-item">
+    <h2>Магазин модульных аксессуаров</h2>
+    <a class="portfolio-item__link" href="http://ona-accessories.shop" target="_blank">ona-accessories.shop</a>
+    <p class="portfolio-item__description">
+        В разработке. Сайт-визитка на главной, и страница с магазином. Всё это на собственном VDS, на Express (2 отдельных приложения, одно под статическую главную и магазин, другое под админку), который проксируется при помощи nginx.
+        Пока не дописан бэкэнд, потому главная пока очень сырая, скорее подходящая под звание заглушки.
+    </p>
+    <div class="slide-show">
+        <input type="radio" value="pic1" name="gallery-2-slide" id="g2_1" checked="checked">
+        <input type="radio" value="pic2" name="gallery-2-slide"  id="g2_2">
+        <input type="radio" value="pic3" name="gallery-2-slide"  id="g2_3">
+        <input type="radio" value="pic4" name="gallery-2-slide"  id="g2_4">
+        <div class="slide-show__slide-shadow">
+            <div class="slide-show__gallery">
+                <img src="img/ona1.png" />
+                <img src="img/ona2.png" />
+                <img src="img/ona3.png" />
+                <img src="img/ona4.png" />
+                <div class="float-clear"></div>
+            </div>
+        </div>
+        <label for="g2_1" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic1">
+            <img src="img/arrow.svg" alt="Предыдущий"/>
+        </label>
+        <label for="g2_2" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic2">
+            <img src="img/arrow.svg" alt="Предыдущий"/>
+        </label>
+        <label for="g2_3" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic3">
+            <img src="img/arrow.svg" alt="Предыдущий"/>
+        </label>
+        <label for="g2_4" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic4">
+            <img src="img/arrow.svg" alt="Предыдущий"/>
+        </label>
+        <label for="g2_1" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic1">
+            <img src="img/arrow.svg" alt="Следующий"/>
+        </label>
+        <label for="g2_2" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic2">
+            <img src="img/arrow.svg" alt="Следующий"/>
+        </label>
+        <label for="g2_3" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic3">
+            <img src="img/arrow.svg" alt="Следующий"/>
+        </label>
+        <label for="g2_4" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic4">
+            <img src="img/arrow.svg" alt="Следующий"/>
+        </label>
+        <div class="slide-show__controls">
+            <label for="g2_1"></label>
+            <label for="g2_2"></label>
+            <label for="g2_3"></label>
+            <label for="g2_4"></label>
+        </div>
+    </div>
+</div>
+
+<div class="feedback"></div>
 </body>
 </html>
