@@ -187,7 +187,7 @@
     }
 
     .about p {
-        font-family: Georgia serif;
+        font-family: Georgia, serif;
         font-size: 16px;
         line-height: 24px;
         text-align: center;
@@ -223,7 +223,7 @@
 
     .expectations__expectation p {
         line-height: 24px;
-        font-family: Georgia serif;
+        font-family: Georgia, serif;
         font-size: 16px;
     }
 
@@ -258,13 +258,13 @@
         text-decoration: none;
         color: #DD3E18;
         margin: 0 20px;
-        font-family: Georgia serif;
+        font-family: Georgia, serif;
         font-size: 16px;
     }
 
     .portfolio-item__description {
         margin: 10px 20px;
-        font-family: Georgia serif;
+        font-family: Georgia, serif;
         color: rgba(0,0,0,0.8);
         line-height: 24px;
     }
@@ -272,7 +272,6 @@
     .feedback {
         box-sizing: border-box;
         width: 100vw;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -287,12 +286,113 @@
         margin: 1em 0;
     }
 
+    .feedback p {
+        font-family: Georgia, serif;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 20px 0;
+    }
+
     .feedback__link {
         text-decoration: none;
         color: #DD3E18;
-        font-family: Georgia serif;
+        font-family: Georgia, serif;
         font-size: 16px;
         line-height: 32px;
+        vertical-align: middle;
+    }
+
+    .feedback__link:hover {
+        color: #b83514;
+    }
+
+    .feedback__link:active {
+        color: #8a280f;
+    }
+
+    .feedback__link img {
+        height: 1em;
+        width: 1em;
+        margin: 0 5px;
+    }
+
+    .feedback form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .feedback form * {
+        margin: 12px 0;
+    }
+
+    .feedback input[type=text], .feedback input[type=email], .feedback textarea {
+        background: #FFFFFF;
+        border: 1px solid rgba(0,0,0,0.10);
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .feedback input[type=text], .feedback input[type=email], .feedback input[type=submit] {
+        box-sizing: border-box;
+        padding: 0 24px;
+        font-family: Georgia, serif;
+        height: 48px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .feedback textarea {
+        box-sizing: border-box;
+        font-family: Georgia, serif;
+        font-size: 16px;
+        height: 198px;
+        padding: 24px;
+    }
+
+    .feedback label {
+        font-family: 'Helvetica Bold', sans-serif;
+        font-size: 16px;
+        color: #DD3E18;
+        cursor: pointer;
+    }
+
+    .feedback label:hover {
+        color: #b83514;
+    }
+
+    .feedback label:active {
+        color: #8a280f;
+    }
+
+    .feedback label input {
+        display: none;
+    }
+
+    .feedback label img {
+        margin: 0;
+    }
+
+    .feedback input[type=submit] {
+        border: none;
+        border-radius: 4px;
+        background: #DD3E18;
+        font-family: 'Helvetica Bold', sans-serif;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .feedback input[type=submit]:hover {
+        background: #b83514;
+    }
+
+    .feedback input[type=submit]:active {
+        background: #8a280f;
     }
 }
 

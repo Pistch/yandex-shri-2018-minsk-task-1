@@ -138,7 +138,7 @@
     <a class="portfolio-item__link" href="http://ona-accessories.shop" target="_blank">ona-accessories.shop</a>
     <p class="portfolio-item__description">
         В разработке. Сайт-визитка на главной, и страница с магазином. Всё это на собственном VDS, на Express (2 отдельных приложения, одно под статическую главную и магазин, другое под админку), который проксируется при помощи nginx.
-        Пока не дописан бэкэнд, потому главная пока очень сырая, скорее подходящая под звание заглушки.
+        Пока не дописан бэкэнд, потому главная пока очень сырая, служащая скорее заглушкой.
     </p>
     <div class="slide-show">
         <input type="radio" value="pic1" name="gallery-2-slide" id="g2_1" checked="checked">
@@ -189,11 +189,30 @@
 
 <div class="feedback">
     <h1>Контактная информация</h1>
-    <a href="https://github.com/Pistch" class="feedback__link" target="_blank">Github</a>
-    <a href="https://vk.com/id1721233" class="feedback__link" target="_blank">VK</a>
-    <a href="mailto:glushenkoa@gmail.com" class="feedback__link">Email</a>
-    <p></p>
-    <!-- форма обратной связи -->
+    <a href="https://github.com/Pistch" class="feedback__link" target="_blank">
+        <img src="img/github.svg">
+        Github
+    </a>
+    <a href="https://vk.com/id1721233" class="feedback__link" target="_blank">
+        <img src="img/vk.svg">
+        VK
+    </a>
+    <a href="mailto:glushenkoa@gmail.com" class="feedback__link">
+        <img src="img/email.svg">
+        Email
+    </a>
+    <p>Не уверен, что сейчас я готов взять на себя ещё один проект, однако с радостью его с Вами обсужу. Информацию о Ваших пожеланиях можно изложить через форму ниже.</p>
+    <form action="#" method="post" enctype="multipart/form-data" name="send_task"> <!-- прикрепляемый файл -->
+        <input type="text" name="sender-name" placeholder="Ваше имя" required>
+        <input type="email" name="sender-email" placeholder="Почтовый ящик">
+        <textarea name="task-description" placeholder="Сообщение"></textarea>
+        <label>
+            <input type="file" name="task-file">
+            <img src="img/tz.png">
+            Прикрепить ТЗ
+        </label>
+        <input type="submit" value="Отправить">
+    </form>
 </div>
 </body>
 </html>
