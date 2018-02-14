@@ -5,7 +5,7 @@
     <title>Портфолио</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
 <div class="about">
@@ -13,13 +13,71 @@
     <h1>Александр Глущенко</h1>
     <div class="about__picture"></div>
     <p>
-        Сисадмин по профессии, программист-самоучка. Пишу в свободное от других вещей игру на React Native, изучаю возможности SVG и варианты анимации в веб,
+        Сисадмин по профессии, программист-самоучка. Пишу в свободное от других вещей время игру на React Native, изучаю возможности SVG и анимации в веб,
         делал многопользовательское веб-приложение для создания и запуска собственного интернет-радио, пишу маленькие инструменты для работы (утилитку мониторинга состояния серверов, агрегатор интерфейсов
         используемых веб-приложений, фишинговую программу для тренировки реакции подшефных пользователей на письма с вредоносным содержимым и т. п.)
     </p>
 </div>
 <h1>Ожидания от ШРИ</h1>
-<div class="expectations"></div>
+<div class="expectations">
+    <div class="slide-show">
+        <input type="radio" value="pic1" name="gallery-0-slide" id="g0_1" checked="checked">
+        <input type="radio" value="pic2" name="gallery-0-slide"  id="g0_2">
+        <input type="radio" value="pic3" name="gallery-0-slide"  id="g0_3">
+        <input type="radio" value="pic4" name="gallery-0-slide"  id="g0_4">
+        <div class="slide-show__slide-shadow">
+            <div class="slide-show__gallery">
+                <div class="expectations__expectation expectations__expectation_small">
+                    <h2>Общение с корифеями</h2>
+                    <p>В моих проектах всегда не хватало "старших товарищей", что не могло не сказываться на количестве испробованных моим лбом граблей.</p>
+                </div><div class="expectations__expectation expectations__expectation_wide">
+                    <h2>Реальный опыт</h2>
+                    <p>Работа в команде - то, что мне, к сожалению, испытывать на себе не приходилось. Да и проекты, которые я делал до сих пор, скорее домашние; человеку же свойственно испытывать потребность в важности результатов собственного труда.</p>
+                </div><div class="expectations__expectation expectations__expectation_wide">
+                    <h2>Интересное времяпровождение</h2>
+                    <p>
+                        Так уж сложилось, что контингент на моей текущей работе сильно старше меня, так что общение с людьми приблизительно равного со мной возраста в последнее время - дефицитный товар.
+                        Да и переезд в другой город (хотя бы на 3 месяца) хорошо меня встряхнёт.
+                    </p>
+                </div><div class="expectations__expectation expectations__expectation_small">
+                    <h2>Работа</h2>
+                    <p>Уже несколько лет мечтаю поработать в Яндексе. Хотя бы поучусь в Яндексе. Ну а вдруг?</p>
+                </div>
+                <div class="float-clear"></div>
+            </div>
+        </div>
+        <label for="g0_1" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic1">
+            <img src="img/arrow.svg" alt="Предыдущий"/>
+        </label>
+        <label for="g0_2" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic2">
+            <img src="img/arrow.svg" alt="Предыдущий"/>
+        </label>
+        <label for="g0_3" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic3">
+            <img src="img/arrow.svg" alt="Предыдущий"/>
+        </label>
+        <label for="g0_4" class="slide-show__controls__arrow slide-show__controls__arrow_left" data-pic="pic4">
+            <img src="img/arrow.svg" alt="Предыдущий"/>
+        </label>
+        <label for="g0_1" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic1">
+            <img src="img/arrow.svg" alt="Следующий"/>
+        </label>
+        <label for="g0_2" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic2">
+            <img src="img/arrow.svg" alt="Следующий"/>
+        </label>
+        <label for="g0_3" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic3">
+            <img src="img/arrow.svg" alt="Следующий"/>
+        </label>
+        <label for="g0_4" class="slide-show__controls__arrow slide-show__controls__arrow_right" data-pic="pic4">
+            <img src="img/arrow.svg" alt="Следующий"/>
+        </label>
+        <div class="slide-show__controls">
+            <label for="g0_1"></label>
+            <label for="g0_2"></label>
+            <label for="g0_3"></label>
+            <label for="g0_4"></label>
+        </div>
+    </div>
+</div>
 <h1>Мои работы</h1>
 <div class="portfolio-item">
     <h2>Сайт моего работодателя</h2>
@@ -129,6 +187,13 @@
     </div>
 </div>
 
-<div class="feedback"></div>
+<div class="feedback">
+    <h1>Контактная информация</h1>
+    <a href="https://github.com/Pistch" class="feedback__link" target="_blank">Github</a>
+    <a href="https://vk.com/id1721233" class="feedback__link" target="_blank">VK</a>
+    <a href="mailto:glushenkoa@gmail.com" class="feedback__link">Email</a>
+    <p></p>
+    <!-- форма обратной связи -->
+</div>
 </body>
 </html>
