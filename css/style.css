@@ -1,12 +1,16 @@
+@font-face {
+    font-family: 'Helvetica Bold';
+    src: url(../fonts/HelveticaBold.otf);
+}
+
+body {  /* убираем горизонтальную полоску прокрутки для Firefox */
+    overflow-x: hidden;
+}
+
 .float-clear {
     height: 0;
     display: block;
     clear: both;
-}
-
-@font-face {
-    font-family: 'Helvetica Bold';
-    src: url(../fonts/HelveticaBold.otf);
 }
 
 @media only screen and (min-width : 320px) {
