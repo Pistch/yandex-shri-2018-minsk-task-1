@@ -753,6 +753,8 @@
 
     .about p {
         max-width: 38vw;
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .expectations {
