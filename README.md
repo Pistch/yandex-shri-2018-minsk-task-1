@@ -1,4 +1,4 @@
-# yandex-shri-2018-minsk-task-3
+# yandex-shri-2018-minsk-task-1
 
 > "Рекламный макет подсознательно экономит JavaScript" - _макет для вёрстки_ 
 
