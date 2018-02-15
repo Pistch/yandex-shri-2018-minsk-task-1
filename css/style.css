@@ -219,6 +219,7 @@
         justify-content: space-around;
         align-items: stretch;
         align-content: stretch;
+        border-radius: 4px;
     }
 
     .expectations__expectation p {
@@ -260,6 +261,14 @@
         margin: 0 20px;
         font-family: Georgia, serif;
         font-size: 16px;
+    }
+
+    .portfolio-item__link:hover {
+        color: #b83514;
+    }
+
+    .portfolio-item__link:active {
+        color: #8a280f;
     }
 
     .portfolio-item__description {
@@ -331,7 +340,7 @@
 
     .feedback input[type=text], .feedback input[type=email], .feedback textarea {
         background: #FFFFFF;
-        border: 1px solid rgba(0,0,0,0.10);
+        border: none;
         border-radius: 4px;
         font-size: 16px;
         line-height: 24px;
@@ -346,12 +355,16 @@
         line-height: 24px;
     }
 
+    .feedback input:focus, .feedback textarea:focus {
+        outline: 1px rgba(0,0,0,0.10);
+    }
+
     .feedback textarea {
         box-sizing: border-box;
         font-family: Georgia, serif;
         font-size: 16px;
         height: 198px;
-        padding: 24px;
+        padding: 12px 24px;
     }
 
     .feedback label {
@@ -397,13 +410,462 @@
 }
 
 @media only screen and (min-width : 768px) {
+    h1 {
+        font-size: 40px;
+        margin: 1em 32px;
+    }
 
+    h2 {
+        font-size: 24px !important;
+    }
+
+    .about {
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .about p {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 0 3em;
+    }
+
+    .expectations {
+        height: auto;
+        padding: 0 4vw;
+    }
+
+    .expectations .slide-show__gallery {
+        width: 100%;
+    }
+
+    .expectations .slide-show {
+        width: 100%;
+    }
+
+    .expectations .slide-show .slide-show__gallery {
+        margin-left: 0 !important;
+    }
+
+    .expectations__expectation {
+        justify-content: space-between;
+        margin-bottom: 2vw;
+        padding: 2vw;
+        height: 32vh;
+    }
+
+    .expectations__expectation:nth-child(2n-1) {
+        margin-right: 2vw;
+    }
+
+    .expectations__expectation_wide {
+        width: 50vw;
+    }
+
+    .expectations__expectation_small {
+        width: 40vw;
+    }
+
+    .expectations .slide-show__controls, .expectations .slide-show__controls__arrow {
+        display: none !important;
+        margin-left: 0 !important;
+    }
+
+    .portfolio-item__text {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 4vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .portfolio-item__heading {
+        width: 40vw;
+        margin-right: 2vw;
+    }
+
+    .portfolio-item__heading h2 {
+        margin: 0 0 1em 0;
+    }
+
+    .portfolio-item__link {
+        line-height: 24px;
+        margin: 0;
+    }
+
+    .portfolio-item__description {
+        width: 60vw;
+        margin: 0 0 2vw 0;
+    }
+
+    .slide-show {
+        width: 92vw;
+    }
+
+    .slide-show__gallery img {
+        width: 92vw;
+    }
+
+    .slide-show input[value=pic1]:checked ~ .slide-show__slide-shadow .slide-show__gallery {
+        margin-left: 0;
+    }
+
+    .slide-show input[value=pic2]:checked ~ .slide-show__slide-shadow .slide-show__gallery {
+        margin-left: -92vw;
+    }
+
+    .slide-show input[value=pic3]:checked ~ .slide-show__slide-shadow .slide-show__gallery {
+        margin-left: -184vw;
+    }
+
+    .slide-show input[value=pic4]:checked ~ .slide-show__slide-shadow .slide-show__gallery {
+        margin-left: -276vw;
+    }
+
+    .slide-show__controls__arrow {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .slide-show__slide-shadow {
+        box-shadow: 0 5px 20px 3px rgba(0,0,0,0.2);
+        margin-bottom: 4vw;
+    }
+
+    .feedback {
+        padding: 0 4vw;
+    }
+
+    .feedback__text p {
+        margin-top: 0;
+        width: 45vw;
+    }
+
+    .feedback__links {
+        float: right;
+        width: 25vw;
+    }
 }
 
 @media only screen and (min-width : 1024px) {
+    .about {
+        position: relative;
+        top: 0;
+        left: 40vw;
+        width: 60vw;
+        justify-content: space-between;
+        padding: 10vh 6vw 10vh 9vw;
+    }
 
+    h1 {
+        margin: 1em 4vw;
+    }
+
+    .about h1, .about h2 {
+        text-align: left;
+    }
+
+    .about p {
+        text-align: left;
+        padding: 0;
+    }
+
+    .about__picture {
+        border-radius: 0;
+        position: absolute;
+        top: 0;
+        left: -40vw;
+        height: 100%;
+        width: 40vw;
+        background-size: auto;
+        margin: 0;
+        background-color: #000;
+    }
+
+    .expectations__expectation {
+        margin-bottom: 3vw;
+        padding: 3vw;
+        height: 33vh;
+    }
+
+    .expectations__expectation:nth-child(2n-1) {
+        margin-right: 3vw;
+    }
+
+    .expectations__expectation_wide {
+        width: 54vw;
+    }
+
+    .expectations__expectation_small {
+        width: 35vw;
+    }
+
+    .portfolio-item {
+        display: block;
+    }
+
+    .portfolio-item_odd > * {
+        float: right;
+    }
+
+    .portfolio-item_even > * {
+        float: left;
+    }
+
+    .portfolio-item__text {
+        width: 33vw;
+        padding: 0;
+        margin: 0 4vw 4vw 4vw;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .portfolio-item__heading {
+        width: 100%;
+    }
+
+    .portfolio-item__heading h2 {
+        margin: 0 0 10px 0;
+    }
+
+    .portfolio-item__link {
+        line-height: 24px;
+        margin: 0;
+    }
+
+    .portfolio-item__description {
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    .portfolio-item .slide-show {
+        position: relative;
+        width: 55vw;
+    }
+
+    .portfolio-item .slide-show__slide-shadow {
+        width: 50vw;
+    }
+
+    .portfolio-item_odd .slide-show__controls {
+        position: absolute;
+        top: 6vw;
+        right: 0;
+        width: 5vw;
+    }
+
+    .portfolio-item_even .slide-show__controls {
+        position: absolute;
+        top: 6vw;
+        left: 0;
+        width: 5vw;
+    }
+
+    .portfolio-item_even .slide-show__slide-shadow {
+        position: relative;
+        left: 5vw;
+    }
+
+    .slide-show__gallery img {
+        width: 50vw;
+    }
+
+    .slide-show input[value=pic1]:checked ~ .slide-show__slide-shadow .slide-show__gallery {
+        margin-left: 0;
+    }
+
+    .slide-show input[value=pic2]:checked ~ .slide-show__slide-shadow .slide-show__gallery {
+        margin-left: -50vw;
+    }
+
+    .slide-show input[value=pic3]:checked ~ .slide-show__slide-shadow .slide-show__gallery {
+        margin-left: -100vw;
+    }
+
+    .slide-show input[value=pic4]:checked ~ .slide-show__slide-shadow .slide-show__gallery {
+        margin-left: -150vw;
+    }
+
+    .slide-show__controls__arrow {
+        top: 10vw;
+    }
+
+    .portfolio-item_even .slide-show__controls__arrow_right {
+        right: .3vw;
+    }
+
+    .portfolio-item_odd .slide-show__controls__arrow_left {
+        left: .3vw;
+    }
+
+    .feedback {
+        display: block;
+        float: left;
+    }
+
+    .feedback h1 {
+        margin-top: 7vh;
+        margin-bottom: 7vh;
+    }
+
+    .feedback__text {
+        float: left;
+        padding: 0 4vw 0 0;
+        width: 28vw;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .feedback__links {
+        margin-top: 7vh;
+        float: none;
+    }
+
+    .feedback__text p {
+        width: 28vw;
+    }
+
+    .feedback form {
+        width: 60vw;
+        margin-bottom: 4vw;
+    }
+
+    .feedback form input:nth-child(1) {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (min-width : 1440px) {
+    h1 {
+        margin: 10vh 17vw;
+    }
 
+    .about p {
+        max-width: 38vw;
+    }
+
+    .expectations {
+        padding: 0 17vw;
+    }
+
+    .expectations .slide-show__slide-shadow {
+        margin-bottom: 0;
+    }
+
+    .expectations__expectation {
+        margin-bottom: 1vw;
+    }
+
+    .expectations__expectation:nth-child(2n-1) {
+        margin-right: 1vw;
+    }
+
+    .expectations__expectation_wide {
+        width: 43vw;
+    }
+
+    .expectations__expectation_small {
+        width: 22vw;
+    }
+
+    .portfolio-item_even .portfolio-item__text {
+        width: 23vw;
+        margin: 0 3vw 8vh 17vw;
+    }
+
+    .portfolio-item_odd .portfolio-item__text {
+        width: 23vw;
+        margin: 0 17vw 8vh 3vw;
+    }
+
+    .portfolio-item .slide-show {
+        width: 40vw;
+    }
+
+    .portfolio-item .slide-show__slide-shadow {
+        width: 37vw;
+    }
+
+    .portfolio-item_even .slide-show__slide-shadow {
+        position: relative;
+        left: 3vw;
+    }
+
+    .slide-show__gallery img {
+        width: 37vw;
+    }
+
+    .portfolio-item .slide-show__slide-shadow {
+        margin-bottom: 8vh;
+    }
+
+    .slide-show input[value=pic1]:checked ~ .slide-show__slide-shadow .slide-show__gallery {
+        margin-left: 0;
+    }
+
+    .slide-show input[value=pic2]:checked ~ .slide-show__slide-shadow .slide-show__gallery {
+        margin-left: -37vw;
+    }
+
+    .slide-show input[value=pic3]:checked ~ .slide-show__slide-shadow .slide-show__gallery {
+        margin-left: -74vw;
+    }
+
+    .slide-show input[value=pic4]:checked ~ .slide-show__slide-shadow .slide-show__gallery {
+        margin-left: -111vw;
+    }
+
+    .portfolio-item_odd .slide-show__controls, .portfolio-item_even .slide-show__controls {
+        width: 3vw;
+    }
+
+    .portfolio-item_even .slide-show__controls {
+        top: 5vw;
+    }
+
+    .portfolio-item_odd .slide-show__controls {
+        top: 5vw;
+    }
+
+    .slide-show__controls__arrow {
+        width: 4vh;
+        height: 4vh;
+        top: 9vw;
+    }
+
+    .portfolio-item_even .slide-show__controls__arrow_right {
+        right: 2vw;
+    }
+
+    .portfolio-item_odd .slide-show__controls__arrow_left {
+        left: 2vw;
+    }
+
+    .feedback {
+        padding: 0 17vw;
+    }
+
+    .feedback__text {
+        padding: 0 3vw 0 0;
+    }
+
+    .feedback__text p, .feedback__text {
+        width: 18vw;
+    }
+
+    .feedback form {
+        width: 42vw;
+        margin-bottom: 4vw;
+    }
 }

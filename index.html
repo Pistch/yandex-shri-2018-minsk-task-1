@@ -9,8 +9,10 @@
 </head>
 <body>
 <div class="about">
-    <h2>Веб-энтузиаст</h2>
-    <h1>Александр Глущенко</h1>
+    <div>
+        <h2>Веб-энтузиаст</h2>
+        <h1>Александр Глущенко</h1>
+    </div>
     <div class="about__picture"></div>
     <p>
         Сисадмин по профессии, программист-самоучка. Пишу в свободное от других вещей время игру на React Native, изучаю возможности SVG и анимации в веб,
@@ -30,16 +32,19 @@
                 <div class="expectations__expectation expectations__expectation_small">
                     <h2>Общение с корифеями</h2>
                     <p>В моих проектах всегда не хватало "старших товарищей", что не могло не сказываться на количестве испробованных моим лбом граблей.</p>
-                </div><div class="expectations__expectation expectations__expectation_wide">
+                </div>
+                <div class="expectations__expectation expectations__expectation_wide">
                     <h2>Реальный опыт</h2>
                     <p>Работа в команде - то, что мне, к сожалению, испытывать на себе не приходилось. Да и проекты, которые я делал до сих пор, скорее домашние; человеку же свойственно испытывать потребность в важности результатов собственного труда.</p>
-                </div><div class="expectations__expectation expectations__expectation_wide">
+                </div>
+                <div class="expectations__expectation expectations__expectation_wide">
                     <h2>Интересное времяпровождение</h2>
                     <p>
                         Так уж сложилось, что контингент на моей текущей работе сильно старше меня, так что общение с людьми приблизительно равного со мной возраста в последнее время - дефицитный товар.
                         Да и переезд в другой город (хотя бы на 3 месяца) хорошо меня встряхнёт.
                     </p>
-                </div><div class="expectations__expectation expectations__expectation_small">
+                </div>
+                <div class="expectations__expectation expectations__expectation_small">
                     <h2>Работа</h2>
                     <p>Уже несколько лет мечтаю поработать в Яндексе. Хотя бы поучусь в Яндексе. Ну а вдруг?</p>
                 </div>
@@ -79,13 +84,17 @@
     </div>
 </div>
 <h1>Мои работы</h1>
-<div class="portfolio-item">
-    <h2>Сайт моего работодателя</h2>
-    <a class="portfolio-item__link" href="http://seatown.ru" target="_blank">seatown.ru</a>
-    <p class="portfolio-item__description">
-        Можно сказать, пробы пера. Делался в то время, когда изучал PHP, а Javascript был чем-то из разряда особой магии для избранных. Сейчас заканчиваю переписывать сайт с нуля, потому что в код текущего варианта смотреть страшно.
-        Новый вариант использует самописную CMS на PHP (таково уж требование IT-менеджера), переработанный роутинг с Человеко-Понятными Урлами и множество других полезностей по части фронтенда.
-    </p>
+<div class="portfolio-item portfolio-item_odd">
+    <div class="portfolio-item__text">
+        <div class="portfolio-item__heading">
+            <h2>Сайт моего работодателя</h2>
+            <a class="portfolio-item__link" href="http://seatown.ru" target="_blank">seatown.ru</a>
+        </div>
+        <p class="portfolio-item__description">
+            Можно сказать, пробы пера. Делался в то время, когда изучал PHP, а Javascript был чем-то из разряда особой магии для избранных. Сейчас заканчиваю переписывать сайт с нуля, потому что в код текущего варианта смотреть страшно.
+            Новый вариант использует самописную CMS на PHP (таково уж требование IT-менеджера), переработанный роутинг с Человеко-Понятными Урлами и множество других полезностей по части фронтенда.
+        </p>
+    </div>
     <div class="slide-show">
         <input type="radio" value="pic1" name="gallery-1-slide" id="g1_1" checked="checked">
         <input type="radio" value="pic2" name="gallery-1-slide"  id="g1_2">
@@ -131,15 +140,20 @@
             <label for="g1_4"></label>
         </div>
     </div>
+    <div class="float-clear"></div>
 </div>
 
-<div class="portfolio-item">
-    <h2>Магазин модульных аксессуаров</h2>
-    <a class="portfolio-item__link" href="http://ona-accessories.shop" target="_blank">ona-accessories.shop</a>
-    <p class="portfolio-item__description">
-        В разработке. Сайт-визитка на главной, и страница с магазином. Всё это на собственном VDS, на Express (2 отдельных приложения, одно под статическую главную и магазин, другое под админку), который проксируется при помощи nginx.
-        Пока не дописан бэкэнд, потому главная пока очень сырая, служащая скорее заглушкой.
-    </p>
+<div class="portfolio-item portfolio-item_even">
+    <div class="portfolio-item__text">
+        <div class="portfolio-item__heading">
+            <h2>Магазин модульных аксессуаров</h2>
+            <a class="portfolio-item__link" href="http://ona-accessories.shop" target="_blank">ona-accessories.shop</a>
+        </div>
+        <p class="portfolio-item__description">
+            В разработке. Сайт-визитка на главной, и страница с магазином. Всё это на собственном VDS, на Express (2 отдельных приложения, одно под статическую главную и магазин, другое под админку), который проксируется при помощи nginx.
+            Пока не дописан бэкэнд, потому главная пока очень сырая, служащая скорее заглушкой.
+        </p>
+    </div>
     <div class="slide-show">
         <input type="radio" value="pic1" name="gallery-2-slide" id="g2_1" checked="checked">
         <input type="radio" value="pic2" name="gallery-2-slide"  id="g2_2">
@@ -185,23 +199,30 @@
             <label for="g2_4"></label>
         </div>
     </div>
+    <div class="float-clear"></div>
 </div>
 
 <div class="feedback">
     <h1>Контактная информация</h1>
-    <a href="https://github.com/Pistch" class="feedback__link" target="_blank">
-        <img src="img/github.svg">
-        Github
-    </a>
-    <a href="https://vk.com/id1721233" class="feedback__link" target="_blank">
-        <img src="img/vk.svg">
-        VK
-    </a>
-    <a href="mailto:glushenkoa@gmail.com" class="feedback__link">
-        <img src="img/email.svg">
-        Email
-    </a>
-    <p>Не уверен, что сейчас я готов взять на себя ещё один проект, однако с радостью его с Вами обсужу. Информацию о Ваших пожеланиях можно изложить через форму ниже.</p>
+    <div class="feedback__text">
+        <div class="feedback__links">
+            <a href="https://github.com/Pistch" class="feedback__link" target="_blank">
+                <img src="img/github.svg">
+                Github
+            </a>
+            <br />
+            <a href="https://vk.com/id1721233" class="feedback__link" target="_blank">
+                <img src="img/vk.svg">
+                VK
+            </a>
+            <br />
+            <a href="mailto:glushenkoa@gmail.com" class="feedback__link">
+                <img src="img/email.svg">
+                Email
+            </a>
+        </div>
+        <p>Не уверен, что сейчас я готов взять на себя ещё один проект, однако с радостью его с Вами обсужу. Информацию о Ваших пожеланиях можно изложить через форму ниже.</p>
+    </div>
     <form action="#" method="post" enctype="multipart/form-data" name="send_task"> <!-- прикрепляемый файл -->
         <input type="text" name="sender-name" placeholder="Ваше имя" required>
         <input type="email" name="sender-email" placeholder="Почтовый ящик">
