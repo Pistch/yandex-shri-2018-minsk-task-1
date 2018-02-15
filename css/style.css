@@ -356,7 +356,7 @@
     }
 
     .feedback input:focus, .feedback textarea:focus {
-        outline: 1px rgba(0,0,0,0.10);
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.10);
     }
 
     .feedback textarea {
